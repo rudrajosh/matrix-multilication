@@ -1,4 +1,40 @@
+print("welcome to matrix world")
+c = int(input("entee 1 or 2 :\n"))
+if c==1:
+	# same result will be obtained when we use @ operator
+# as shown below(only in python &gt;3.5)
+import numpy as np
 
+# input two matrices
+matrix_A_cols == matrix_B_rows:
+    print('Enter values for matrix A')
+    matrix_A = [[int(input(f"column {j+1} -> ENter {i+1} element:")) for j in range(matrix_A_cols)] for i in range(matrix_A_rows) ]
+
+    print() 
+
+    print('Enter values for matrix B ')
+    matrix_B = [[int(input(f"column {j+1} -> ENter {i+1} element:")) for j in range(matrix_B_cols)] for i in range(matrix_B_rows) ]
+
+    print() 
+
+    print('Matrix-A :')
+    for i in matrix_A:
+        print(i)
+
+    print() 
+    print('Matrix-B :')
+    for i in matrix_B:
+        print(i)
+
+        result = [[0 for j in range(matrix_B_cols)] for i in range(matrix_A_rows)]
+
+
+# This will return matrix product of two array
+res = matrix_A @ matrix_B
+
+# print resulted matrix
+print(res)
+elif c == 2:
 matrix_A_rows = int(input('ENter number of rows for matrix-A: '))
 matrix_A_cols  = int(input('ENter number of columns for matrix-A: '))
 
