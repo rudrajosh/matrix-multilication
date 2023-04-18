@@ -1,5 +1,5 @@
 print("welcome to matrix world")
-c = int(input("entee 1 or 2 :\n"))
+c = int(input("enter 1 or 2 :\n"))
 if c==1:
 	# same result will be obtained when we use @ operator
 # as shown below(only in python &gt;3.5)
