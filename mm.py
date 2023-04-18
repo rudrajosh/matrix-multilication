@@ -1,5 +1,5 @@
 print("welcome to matrix world")
-c = int(input("enter 1 or 2 :\n"))
+c = int(input("enter 1 or 2 or 3:\n"))
 if c==1:
 	# same result will be obtained when we use @ operator
 # as shown below(only in python &gt;3.5)
@@ -81,3 +81,28 @@ if matrix_A_cols == matrix_B_rows:
         
 else:
     print('Multiplication of matrices is not possible (columns of matrix-A = row of matrix-B)')
+if c == 3:
+	import numpy as np
+
+# Get the matrix dimensions from the user
+n = int(input("Enter the dimension of the matrix: "))
+
+# Initialize the matrix
+matrix = np.zeros((n, n))
+
+# Get the matrix elements from the user
+print("Enter the matrix elements:")
+for i in range(n):
+    for j in range(n):
+        matrix[i][j] = float(input(f"Enter element [{i+1}][{j+1}]: "))
+
+# Calculate the inverse of the matrix
+matrix_inv = np.linalg.inv(matrix)
+
+# Print the original matrix
+print("Original matrix:")
+print(matrix)
+
+# Print the inverse of the matrix
+print("Inverse of the matrix:")
+print(matrix_inv)
